@@ -1,23 +1,17 @@
-const e
-
 let nextId = 1;
+let criado_em = new Date();
 
 const model = (body, id = nextId++) => {
+;
+    if (body.nome != undefined && body.nome != "") {
+        atualizado_em = new Date();
+        console.log(atualizado_em);
 
-    if (
-        body.dataAluguel != undefined &&
-        body.dataAluguel != "" &&
-        body.dataDevolucao != undefined &&
-        body.dataDevolucao != "" &&
-        estudio_controller.show(body.livro_id) &&
-        estudante_controller.show(body.estudante_id)
-    ) {
         return {
             id,
-            dataAluguel: body.dataAluguel,
-            dataDevolucao: body.dataDevolucao,
-            livro_id: body.livro_id,
-            estudante_id: body.estudante_id,
+            nome: body.nome,
+            criado_em: criado_em,
+            atualizado_em: atualizado_em,
         };
     }
 };

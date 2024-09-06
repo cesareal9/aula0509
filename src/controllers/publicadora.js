@@ -1,4 +1,4 @@
-const model = require("../models/publicadora.js")
+const model = require("../modules/publicadora.js")
 
 const db = []
 
