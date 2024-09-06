@@ -1,0 +1,16 @@
+let nextId = 1;
+let criado_em = new Date();
+
+const model = (body, id = nextId++) => {
+    if (body.nome != undefined && body.nome != "") {
+        atualizado_em = new Date();
+        return {
+            id,
+            nome: body.nome,
+            criado_em: criado_em,
+            atualizado_em: atualizado_em,
+        };
+    }
+};
+
+module.exports = model;

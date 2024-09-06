@@ -1,4 +1,4 @@
-const model = require("../models/jogo.js")
+const model = require("../modules/jogo.js")
 
 const db = []
 
